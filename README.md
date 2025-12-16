@@ -10,7 +10,7 @@ Built for **Linux**. Single static binary. **Zero runtime deps** (SQLite bundled
 
 ## ✨ Features
 
-- ⚡ **Blazing fast** — Rust + SQLite = solves logged in **nanoseconds**
+- ⚡ **Blazing fast** — Rust + SQLite = solves logged **faster than you blink (0.1s to 0.6s)**
 - 🧊 **Method-aware**: track `roux`, `oh`, `bld` separately with tailored stats
 - 📊 **Real metrics**: PB, avg5, avg12, consistency (stdev%), fuck-up ratio, BLD success rate
 - 🎲 **Built-in scrambler**: method-optimized, no network, no bloat
@@ -55,7 +55,7 @@ crank roast --russian-mode
 
 - **No WCA dogma** — this is **your** training log  
 - **No GUIs**, no web, no cloud — if it can’t run over SSH, it’s useless  
-- **Roasts are opt-in** — customize your pain via `~/.crank/roasts.txt`  
+- **Roasts are opt-in** — customize your pain via `~/.crank/roasts.txt`
 - **Speed > polish** — but not at the cost of correctness  
 
 ---
@@ -75,9 +75,7 @@ Then run:
 ```bash
 crank roast --russian-mode
 ```
- > ⚠️ **Note**: `--russian-mode` may use excessively harsh language. The name "russian" is arbitrary (I'm learning the language). No offense intended.
-
-> 🚨 **Warning**: These lines are **evaluated as raw strings** — no escapes, no mercy.
+ > ⚠️ **Note**: The name "russian" is arbitrary (I'm learning the language). No offense intended.
 
 ---
 
@@ -106,7 +104,11 @@ cd crank
 cargo install --path .
 ```
 
-> ℹ️ Public roast lines are **tame**. Enable `--russian-mode` to load your personal humiliation list (store in `~/.crank/roasts.txt`, not tracked).
+---
+
+## 🐛 Issues & Contributing
+Found a bug? Your BLD memo probably failed too.  
+Open an issue [here](https://github.com/Mohammad-Ali-Rauf/crank/issues)
 
 ---
 
@@ -115,21 +117,12 @@ MIT — break it, fork it, roast with it.
 
 ---
 
-## 🐛 Issues & Contributing
-Found a bug? Your BLD memo probably failed too.  
-Open an issue: [github.com/Mohammad-Ali-Rauf/crank/issues](https://github.com/Mohammad-Ali-Rauf/crank/issues)
+⚠️ **Roast mode will insult you.** That's the point.  
+If you're sensitive to verbal abuse, don't run `crank roast`. Otherwise:
+- Your OH *will* be called pathetic
+- Your BLD failures *will* be chronicled
+- Mentioning CFOP may cause spontaneous binary combustion
 
----
-
-## 🤡 Disclaimer
-
-This tool may:
-- Tell you your OH is pathetic  
-- Remind you that your BLD memo failed *again*  
-- Self-delete if you dare whisper “CFOP” near it  
-
-- **DO NOT USE if you are sensitive to verbal insults**  
-
-**It’s not a bug — it’s a feature.**
+**Not a bug. A feature.**
 
 > 💀 Made for cubers who `strace` their timers and believe `/bin/bash` is a lifestyle.  
