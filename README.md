@@ -16,8 +16,8 @@ Built for **Linux**. Single static binary. **Zero runtime deps** (SQLite bundled
 - 🎲 **Built-in scrambler**: method-optimized, no network, no bloat
 - 🎯 **Goal tracking**: `crank goal roux pb 11.5` → it watches. It judges.
 - 💥 **Roast mode**: optional motivational abuse (`crank roast`)
-- 🗃️ **Single binary, single DB** (`~/.crank.db`) — your entire cubing life in 2 files
-- 🔄 **Backup-friendly**: DB lives at `~/.crank.db` — copy it, version it, `rsync` it to Mars
+- 🗃️ **Single binary, single DB** (`~/.crank/crank.db`) — your entire cubing life in 2 files
+- 🔄 **Backup-friendly**: DB lives at `~/.crank/crank.db` — copy it, version it, `rsync` it to Mars
 
 ---
 
@@ -75,6 +75,7 @@ Then run:
 ```bash
 crank roast --russian-mode
 ```
+ > ⚠️ **Note**: `--russian-mode` may use excessively harsh language. The name "russian" is arbitrary (I'm learning the language). No offense intended.
 
 > 🚨 **Warning**: These lines are **evaluated as raw strings** — no escapes, no mercy.
 
@@ -82,15 +83,15 @@ crank roast --russian-mode
 
 ## 🗃️ Backup & Portability
 
-Your data lives **only** in `~/.crank.db`.  
+Your data lives **only** in `~/.crank/crank.db`.  
 To back up:
 ```bash
-cp ~/.crank.db ~/backups/crank-$(date -I).db
+cp ~/.crank/crank.db ~/backups/crank-$(date -I).db
 ```
 
 To migrate to another machine:  
 1. Install `crank`  
-2. Copy your old `~/.crank.db` into place  
+2. Copy your old `~/.crank/crank.db` into place  
 3. Resume getting roasted exactly where you left off  
 
 **No cloud. No sync. Just files.** Like God intended.
@@ -106,6 +107,17 @@ cargo install --path .
 ```
 
 > ℹ️ Public roast lines are **tame**. Enable `--russian-mode` to load your personal humiliation list (store in `~/.crank/roasts.txt`, not tracked).
+
+---
+
+## 📜 License
+MIT — break it, fork it, roast with it.
+
+---
+
+## 🐛 Issues & Contributing
+Found a bug? Your BLD memo probably failed too.  
+Open an issue: [github.com/Mohammad-Ali-Rauf/crank/issues](https://github.com/Mohammad-Ali-Rauf/crank/issues)
 
 ---
 
